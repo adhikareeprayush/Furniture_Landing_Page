@@ -1,0 +1,188 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/imperfecta');
+@import url('https://fonts.cdnfonts.com/css/bartkey');
+
+
+body{
+    font-family: 'BARTKEY', sans-serif;
+    background-color: #f0f0f0;
+
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navbar */
+
+.navbar{
+    height:75px;
+}
+
+.navbar-nav{
+    margin-left:200px;
+}
+
+#navbrand{
+    font-weight: 700;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2px;
+    letter-spacing: 2px;
+    color: #bb986f;
+}
+
+.nav-item a{
+    font-weight:600;
+    font-size:16px;
+    margin:0px 10px;
+    color: #bb986f;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-item a:hover{
+    color: #28531a;
+    transform: scale(1.1);
+}
+
+.active{
+    color: #28531a !important;
+}
+
+.icons i{
+    font-size: 22px;
+    margin: 0px 10px;
+    color: #bb986f;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons i:hover{
+    color: #28531a;
+    transform: scale(1.2);
+}
+
+
+
+/* Hero Section */
+
+#hero{
+
+    height:100vh;
+    width:100%;
+    background-image: url(images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+custom-toggler.navbar-toggler {
+    border-color: #bb986f;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(187, 152, 111, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#container-hero{
+    background-color:#fff3e3;
+    border-radius:0px;
+    width:fit-content;
+    padding:40px 40px;
+
+    position: absolute;
+    top:55%;
+    left: 70%;
+    transform: translate(-70%,-50%);
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+#container-hero h1{
+    color:#b88e2f;
+}
+
+#container-hero button{
+    transition: all 0.3s ease-in-out;
+}
+
+#container-hero button:hover{
+    background-color: transparent;
+    color: #b88e2f;
+    transform: scale(1.1);
+    border:1px solid #b88e2f;
+}
+
+
+/* Navbar Responsive */
+
+@media (max-width:1200px)
+{
+    .icons i{
+        display: none !important;
+    }
+
+    .navbar-nav{
+        width:200px;
+        margin-left: auto;
+        height: 100vh;
+        border-radius: 20px;
+        padding:10px 10px;
+    }
+
+    .navbar-nav .nav-item{
+        width:100%;
+        margin: 10px 0px;
+    }
+
+}
+
+@media (max-width:992px)
+{
+    .navbar-nav{
+        width:200px;
+        margin-left: auto;
+        border-radius: 20px;
+        padding:10px 10px;
+    }
+
+    .navbar-nav .nav-item{
+        width:100%;
+        margin: 10px 0px;
+    }
+
+
+    .navbar-nav{
+        background-color: #bb986f;
+    }
+
+    .nav-item a{
+        color: #fff;
+    }
+
+    #container-hero {
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding:20px 20px;
+        width:300px;
+    }
+
+    #container-hero h1{
+        font-size:20px !important;
+    }
+
+    #container-hero p{
+        font-size:16px;
+    }
+}
+
